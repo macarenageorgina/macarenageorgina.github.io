@@ -1,0 +1,15 @@
+{
+  "name": "macarenageorgina.github.io",
+  "version": "1.0.0",
+  "description": "Proyecto UADE | Diseño y Desarrollo Web | Sitio Web Portfolio Profesional",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/styles/main.scss:public/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}

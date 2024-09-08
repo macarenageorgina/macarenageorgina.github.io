@@ -1,0 +1,43 @@
+@import '../utils/variables.scss';
+
+body {
+    background: #000000;
+    font-family: $primary-font;
+    color: $text-color;
+}
+
+.nav-bar {
+    ul {
+        list-style: none;
+    }
+    a {
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+a {
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+    font-family: $primary-font;
+    color: $text-color;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-nav {
+    height: 51px;
+    width: 115px;
+    border-radius: 8px;
+    background-color: rgb(100, 0, 230);
+    color: $text-color;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 16px 10px;
+    border: none;
+}

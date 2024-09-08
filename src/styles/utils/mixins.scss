@@ -1,0 +1,30 @@
+@mixin flexbox ($justify, $alingn) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alingn;
+}
+
+@mixin btn-cta {
+        height: 51px;
+        width: 115px;
+        border-radius: 8px;
+        background-color: rgb(100, 0, 230);
+        color: $text-color;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 16px 10px;
+        border: none;
+}
+
+
+@mixin btn-filter-projects  {
+    height: 39px;
+    border-radius: 40px;
+    margin-left: 10px;
+    padding: 10px 16px;
+    border-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}

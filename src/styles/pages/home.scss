@@ -1,0 +1,134 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+body{
+    font-family: $primary-font;
+}
+
+// Hero //
+.main-content {
+    display: flex;
+    align-items: center;
+    width: 1140px;
+    height: 630px;
+    margin: 0 auto;
+    padding: 50px;
+    .btn-hero{
+        background-color: #6400E6;
+        color: #FFFFFF;
+        width: 200px;
+        height: 44px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+    .btn-default {
+        background-color: inherit;
+    }
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-placeholder {
+    flex: 1;
+    height: 400px;
+    @include flexbox(center, center);
+    font-weight: bold;
+}
+
+.image-placeholder img {
+    height: 350px;
+    width: auto;
+}
+
+.hero-div {
+    .hero-h1 {
+        color: white;
+        font-size: 36px;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+    p{
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: large;
+    }
+}
+
+// Proyectos //
+
+.header-projects {
+    h2 {
+        text-align: center;
+    }
+}
+
+.buttons-project {
+    text-align: center;
+    .btn-projects {
+        width: 180px;
+        @include btn-filter-projects;
+    
+    }
+}
+
+// Servicios 
+
+.services {
+    h2 {
+        text-align: center;
+    }
+}
+
+// Testimonios //
+
+.testimonials { 
+    h2 {
+        text-align: center;
+    }
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.testimonial-quote {
+    height: 200px;
+    width: 400px;
+    background: #f2f3ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background: linear-gradient(#f4f5ff, #d7daff);
+    .quote-text {
+        display: block;
+        color: #2f3465
+    }
+    }
+    .img-testimonial {
+        height: 48px;
+        width: 48px;
+        margin-right: 0.5rem;
+    }
+    .nameBlock {
+        display: inline-block;
+        .quoteName {
+            color: #2f3465;
+            font-weight: bold;
+        }
+        .quoteRole {
+            color: #2f3465;
+        }
+    }
+
+
+    .contact {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }

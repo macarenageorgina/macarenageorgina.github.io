@@ -4,14 +4,22 @@
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="../src/assets/icons/logo-default.png">
     <!--Links -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
     <title> Macarena Gimenez - Portfolio </title>
 </head>
 <body>
     <header>
-        <nav> 
-            <ul class="nav-bar">
+        <nav class="nav-bar"> 
+            <ul class="nav-list">
+                <li class="nav-item"> 
+                    <a href="./html/aboutme.html"> Inicio </a>
+                </li>
                 <li class="nav-item"> 
                     <a href="./html/aboutme.html"> Sobre Mi </a>
                 </li>
@@ -19,28 +27,133 @@
                     <a href="./html/portfolio.html"> Portafolio </a>
                 </li>
                 <li class="nav-item"> 
-                    <a> Servicios </a>
+                    <a href="./html/services.html"> Servicios </a>
                 </li>
                 <li class="nav-item"> 
                     <a href="./html/testimonials.html"> Testimonios </a>
                 </li>
-                <li class="nav-item"> 
-                    <a> Contacto </a>
+                <li class="nav-item">
+                    <a class="nav-item-a" href="./html/contact.html">
+                        <button type="btn-navbar" class="btn-nav"> Contacto </button></a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="projects">
-
+    <section class="hero-container">
+        <div class="main-content">
+            <div class="text-content hero-div">
+                <h1 class="hero-h1"> Hey! Soy Macarena Giménez </h1>
+                <p class="hero-p">
+                    Soy diseñadora UX/UI y desarrolladora FullStack. Además, <br> me encantan
+                    el análisis de datos, la comunicación y el marketing.
+                </p>
+                <a class="nav-item-a" href="html/aboutme.html">
+                    <button type="button" class="btn-hero">
+                        Conoce más
+                    </button>
+                </a>
+                <a class="nav-item-a" href="html/resume.html">
+                    <button type="button" class="btn-hero btn-default">
+                        Mi Curriculum
+                    </button>
+                </a>
+            </div>
+            <div class="image-placeholder">
+                <img src="../src/assets/img/img-macarena.png" alt="foto-macarena-portfolio" />
+            </div>
+        </div>
     </section>
+    <!-- Mis proyectos -->
+    <section class="projects">
+        <header class="header-projects">
+            <h2> Mis proyectos </h2>
+            <div class="buttons-project">
+                <button type="submit" class="btn-projects"> Desarrollo Web </button>
+                <button type="submit" class="btn-projects"> Diseño UX/UI </button>
+                <button type="submit" class="btn-projects"> Visualización de Datos </button>
+            </div>
+        </header>
+        <div class="projects-container"> 
+            <article class="project preview">
+                <img>
+                <h3> HEIN - Gestión Emocional </h3>
+            </article>
+            <article class="project preview">
+                <img>
+                <h3> Sistema de Diseño - HEIN </h3>
+            </article>
+            <article class="project preview">
+                <img>
+                <h3> Aplicación Find Travellers </h3>
+            </article>
+        </div>
+    </section>
+    <!-- Servicios -->
     <section class="services"> 
-
+        <h2> Servicios </h2>
+        <div class="services-container"> 
+            <div>
+                <h3> Desarrollo Web </h3>
+                <p> </p>
+            </div>
+            <div>
+                <h3> Diseño UX/UI </h3>
+                <p> </p>
+            </div>
+            <div>
+                <h3> Comunicación </h3>
+            </div>
+        </div>
     </section>
     <section class="testimonials">
-
+        <h2> Testimonios </h2>
+        <div class="testimonials-container">
+            <div class="testimonial-quote">
+                <p class="quote-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna diam, viverra ac blandit a, vestibulum non eros. Ut viverra mollis volutpat. Donec at vulputate mi. Donec vestibulum lacinia gravida. Etiam eleifend tincidunt sapien a pellentesque. </p>
+                <div class="testimonial-attribution">
+                    <img class="img-testimonial" src="../src/assets/img/foto_Leonel.png">
+                    <div class="nameBlock">
+                        <p class="quoteName"> Leonel Contreras </p>
+                        <p class="quoteRole"> Full Stack Developer @ HEIN </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-quote">
+                <p class="quote-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque magna diam, viverra ac blandit a, vestibulum non eros. Ut viverra mollis volutpat. Donec at vulputate mi. Donec vestibulum lacinia gravida. Etiam eleifend tincidunt sapien a pellentesque. </p>
+                <div class="testimonial-attribution">
+                    <img class="img-testimonial" src="../src/assets/img/foto_Leonel.png">
+                    <div class="nameBlock">
+                        <p class="quoteName"> Ingrid Miraz </p>
+                        <p class="quoteRole"> Scrum Master @ HEIN </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-quote">
+                <p class="quote-text"> Pellentesque magna diam, viverra ac blandit a, vestibulum non eros. Ut viverra mollis volutpat. Donec at vulputate mi. Donec vestibulum lacinia gravida. Etiam eleifend tincidunt sapien a pellentesque. </p>
+                <div class="testimonial-attribution">
+                    <img class="img-testimonial" src="../src/assets/img/foto_Leonel.png">
+                    <div class="nameBlock">
+                        <p class="quoteName"> María Eliana Metral </p>
+                        <p class="quoteRole"> Coordinadora en Fundación Pescar </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-
+    <section class="contact"> 
+        <h2> Contacto </h2>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="socials-container">
+                <a class="social-btn" href="">
+                    
+                </a>
+            </div>
+            <div class="footer-sup">
+                <p> 2024 © Diseñado con ❤️ por Macarena Georgina.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
