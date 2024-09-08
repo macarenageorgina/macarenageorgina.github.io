@@ -4,6 +4,15 @@
     align-items: $alingn;
 }
 
+@mixin dropdown {
+    opacity: 0;
+    width: 180px;
+    position: absolute;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: ease all 0.3s;
+}
+
+
 @mixin btn-cta {
         height: 51px;
         width: 115px;
