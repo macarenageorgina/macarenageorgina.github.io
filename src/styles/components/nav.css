@@ -1,26 +1,21 @@
-@import '../utils/variables.scss';
-
 body {
     background: #000000;
-    font-family: $primary-font;
-    color: $text-color;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
 }
 
-.nav-bar {
-    ul {
-        list-style: none;
-    }
-    a {
-        font-size: 16px;
-        padding: 20px;
-    }
-}
+.nav-bar ul {
+    list-style: none;
+} 
+
 
 a {
+    font-size: 16px;
+    padding: 20px;
     transition: all ease-in-out 0.3s;
     text-decoration: none;
-    font-family: $primary-font;
-    color: $text-color;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
 }
 
 .nav-list{
@@ -30,7 +25,11 @@ a {
 }
 
 .nav-list-dropdown {
-    @include dropdown;
+    opacity: 0;
+    width: 180px;
+    position: absolute;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: ease all 0.3s;
     visibility: hidden;
     transform: translateY(50px);
     left: -10px;
@@ -46,7 +45,7 @@ a {
 
 .dropdown-icon::after {
     content:"\f078";
-    font-family: $primary-font; 
+    font-family: "Montserrat", sans-serif; 
     font-size: 20px;
     font-weight: 900;
     padding: 10px;
@@ -71,7 +70,7 @@ a {
     width: 115px;
     border-radius: 8px;
     background-color: rgb(100, 0, 230);
-    color: $text-color;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
