@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #FAFAFA;
+    background: #FAFAFA !important;
 }
 
 .nav-bar ul {
@@ -68,7 +68,7 @@ a {
     height: 51px;
     width: 115px;
     border-radius: 8px;
-    background-color: #F582AE;
+    background-color: #F582AE !important;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;

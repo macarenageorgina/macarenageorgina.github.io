@@ -1,0 +1,34 @@
+.curriculum_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.5rem;
+}
+
+.curriculum_title {
+    font-size: 48px;    
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
+    text-align: center;
+}
+
+.btn_download {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        margin-bottom: 1.5rem;
+}
+
+.btn_download:hover {
+    background-color: #001858;
+}
+
+.img_curriculum {
+    height: 700px;
+}
