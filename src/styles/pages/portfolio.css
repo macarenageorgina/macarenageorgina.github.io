@@ -1,0 +1,66 @@
+.portafolio_section {
+    margin-bottom: 5.5rem;
+}
+
+
+.portfolio_title {
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 105%;
+}
+
+.projects_container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.project_container {
+    border-radius: 16px;
+    background: #FFFFFF;
+    display: inline-flex;
+    height: 567px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    width: 359px;
+}
+
+.img_project {
+    width: 308px;
+    height: 244px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tag_project {
+    height: 21px;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    padding: 4px 8px;
+    text-align: center;
+    gap: 10px;
+}
+
+.tag_web {
+    background: #F6DC98 ;
+    width: 126px;
+}
+
+.tag_ux {
+    background: #BAF3FB;
+    width: 100px;
+}
+
+.link_project {
+    padding: 0;
+}

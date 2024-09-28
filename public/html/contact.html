@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../src/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../../src/styles/components/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../src/styles/pages/contact.css">
+    <link rel="stylesheet" type="text/css" href="../../src/styles/components/footer.css">
     <title> Contacto </title>
 </head>
 <body>
@@ -44,15 +46,40 @@
             </ul>
         </nav>
     </header>
-    <div class="info-container">
-        <form action method="POST" role="form" class="contact-form">
-            <div class="name-mail">
-                <input type="text" placeholder="Nombre" class="form-control inputname" required />
-                <input type="text" placeholder="Correo electrónico" class="form-control inputemail" required/>
-            </div>
-            <textarea placeholder="Hola Macarena! Tengo una idea para un proyecto" rows="5" cols="30" class="form-control form-textarea inputtext" required></textarea>
-            <button class="btn-contact"> Enviar </button>
-        </form>
-    </div>
+    <section class="contact_section">
+        <div class="contact_container">
+            <h2 class="title_contact">Contacto</h2>
+            <p class="subtitle">
+              <span class="greyText">¿Tenes una idea?</span> 
+              <span class="blueText"> Hablemos! </span>
+            </p>
+            <form class="contactForm">
+                <div class="inputGroup">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" placeholder="Franco Colapinto" id="name" name="name">
+                </div>
+                <div class="inputGroup">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" placeholder="francolapinto@gmail.com" id="email" name="email">
+                </div>
+                <div class="inputGroup">
+                    <label for="message"> Mensaje </label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="submitButton"> Enviar mensaje </button>
+            </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+        <div>
+            <p>Materia: Diseño y desarrollo web</p>
+            <p>Curso: 492766</p>
+            <p>Grupo: 3</p>
+        </div>
+        <div>
+            <p> 2024 © Diseñado con ❤️ por Macarena Georgina. </p>
+        </div>
+        </div>
+      </footer>
 </body>
 </html>
