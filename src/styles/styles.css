@@ -1,7 +1,7 @@
 body {
     font-family: "Montserrat", sans-serif;
-        background: #FAFAFA;
-        color: #000000;
+    background: #FAFAFA;
+    color: #001858;
     }
 
 
@@ -15,21 +15,17 @@ body {
 }
 
 .btn-hero{
-    background-color: #6400E6;
-    color: #FFFFFF;
+    background-color: #F582AE;
+    border: none;
+    color: #1F4172;
     width: 200px;
     height: 44px;
     border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.btn-default {
-    background-color: inherit;
-}
-
-.text-content {
-    flex: 1;
-}
 
 .image-placeholder {
     flex: 1;
@@ -45,11 +41,15 @@ body {
     width: auto;
 }
 
-.hero-div h1 {
-    color: white;
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-h1 {
+    color: #001858;;
     font-size: 36px;
-    margin: auto;
-    padding-bottom: 30px;
 }
 
 .hero-div p {
@@ -58,12 +58,17 @@ body {
     font-size: large;
 }
 
+.btn-container {
+    padding: 0;
+}
+
 .header-projects h2 {
         text-align: center;
 }
 
 .buttons-project {
     text-align: center;
+
 }
 
 .btn-projects {
@@ -86,6 +91,3 @@ body {
     text-align: center;
 }
 
-.footer {
-    text-align: center;
-}

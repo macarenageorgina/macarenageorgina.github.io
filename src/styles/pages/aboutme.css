@@ -1,0 +1,34 @@
+.aboutme_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme_title {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
+}
+
+.about_container {
+    display: flex;
+    width: 744px;
+    height: 300px;
+    padding: 44px 44px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.aboutme_h2 {
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
+}
