@@ -17,6 +17,11 @@ a {
     
 }
 
+a.active {
+    font-weight: bold; /* Resaltar el enlace en negrita */
+    color: #000000; /* Opcional, para cambiar el color */
+}
+
 .nav-list{
     display: flex;
     justify-content: center;
