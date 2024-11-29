@@ -1,37 +1,40 @@
+/* Estilo base */
 .portafolio_section {
     margin-bottom: 5.5rem;
 }
 
-
 .portfolio_title {
-        text-align: center;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 105%;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 105%;
 }
 
 .projects_container {
     display: flex;
     justify-content: center;
     gap: 24px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
 }
 
 .project_container {
     border-radius: 16px;
     background: #FFFFFF;
-    display: inline-flex;
-    height: 567px;
+    display: flex;
+    height: auto; /* Permitir altura dinámica */
     padding: 24px;
     flex-direction: column;
     align-items: center;
     gap: 19px;
-    width: 359px;
+    width: 100%; /* Tomar el 100% del contenedor padre */
+    max-width: 359px; /* Limitar el ancho máximo */
+    margin-bottom: 24px; /* Espacio entre proyectos en dispositivos pequeños */
 }
 
 .img_project {
-    width: 308px;
-    height: 244px;
+    width: 100%; /* Ajustar al ancho del contenedor */
+    height: auto; /* Mantener proporción de aspecto */
     border-radius: 8px 8px 0px 0px;
 }
 
@@ -39,28 +42,76 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: center; /* Centrar texto en pantallas pequeñas */
 }
 
 .tag_project {
-    height: 21px;
+    height: auto;
     border-radius: 40px;
     border: none;
-    display: flex;
-    padding: 4px 8px;
+    padding: 8px 12px;
     text-align: center;
     gap: 10px;
+    font-size: 14px; /* Reducir tamaño de fuente en etiquetas */
 }
 
 .tag_web {
-    background: #F6DC98 ;
-    width: 126px;
+    background: #F6DC98;
+    width: auto;
 }
 
 .tag_ux {
     background: #BAF3FB;
-    width: 100px;
+    width: auto;
 }
 
 .link_project {
     padding: 0;
+    font-size: 14px; /* Ajustar el tamaño del enlace */
+}
+
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #9D00FF;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 25px;
+    font-size: 14px; /* Reducir tamaño del botón */
+}
+
+/* Estilos específicos para pantallas de 436px o menos */
+@media (max-width: 436px) {
+    .portfolio_title {
+        font-size: 32px; /* Reducir tamaño del título */
+        padding: 0 16px; /* Añadir espacio alrededor */
+    }
+
+    .projects_container {
+        gap: 16px; /* Reducir espacio entre proyectos */
+    }
+
+    .project_container {
+        padding: 16px; /* Reducir relleno interno */
+        width: 100%; /* Usar todo el ancho disponible */
+    }
+
+    .img_project {
+        width: 100%; /* Asegurarse de que se ajuste al contenedor */
+    }
+
+    .tag_project {
+        font-size: 12px; /* Ajustar el tamaño de las etiquetas */
+    }
+
+    #myBtn {
+        bottom: 10px; /* Ajustar posición del botón flotante */
+        right: 10px;
+    }
 }

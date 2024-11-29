@@ -55,16 +55,19 @@
             </p>
             <form class="contactForm">
                 <div class="inputGroup">
-                    <label for="name">Nombre completo</label>
+                    <label for="nombre">Nombre completo</label>
                     <input type="text" placeholder="Franco Colapinto" id="name" name="name">
+                    <small class="error-message" id="nombre-error"></small>
                 </div>
                 <div class="inputGroup">
                     <label for="email">Correo electrónico</label>
                     <input type="email" placeholder="francolapinto@gmail.com" id="email" name="email">
+                    <small class="error-message" id="email-error"></small>
                 </div>
                 <div class="inputGroup">
                     <label for="message"> Mensaje </label>
-                    <textarea id="message" name="message"></textarea>
+                    <textarea id="message" id="consulta"></textarea>
+                    <small class="error-message" id="consulta-error"></small>
                 </div>
                 <button type="submit" class="submitButton"> Enviar mensaje </button>
             </form>
@@ -89,5 +92,6 @@
         </div>
         </div>
       </footer>
+    <script src="../../src/js/formValidation.js"> </script>
 </body>
 </html>

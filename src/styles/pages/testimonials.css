@@ -50,3 +50,50 @@ color: #2f3465;
 color: #2f3465;
 font-weight: bold;
 }
+
+/* Media query para dispositivos con un ancho máximo de 436px */
+@media (max-width: 436px) {
+    .testimonials_title {
+        font-size: 32px; /* Reducir tamaño de título */
+    }
+
+    .testimonials-container {
+        flex-direction: column; /* Apilar elementos en lugar de alinearlos en fila */
+        gap: 16px; /* Agregar espacio entre los elementos */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .testimonial-quote {
+        width: 90%; /* Ajustar al 90% del ancho de la pantalla */
+        height: auto; /* Permitir altura dinámica */
+        padding: 1rem; /* Reducir el padding */
+    }
+
+    .quote-text {
+        font-size: 14px; /* Reducir tamaño del texto */
+        line-height: 1.5; /* Mejorar la legibilidad */
+    }
+
+    .testimonial-attribution {
+        flex-direction: column; /* Apilar la imagen y el nombre/rol */
+        align-items: center; /* Centrar los elementos */
+        gap: 0.5rem; /* Agregar espacio entre elementos */
+    }
+
+    .img-testimonial {
+        margin-right: 0; /* Quitar margen derecho */
+        margin-bottom: 0.5rem; /* Agregar margen inferior */
+    }
+
+    .nameBlock {
+        text-align: center; /* Centrar texto */
+    }
+
+    .quoteName {
+        font-size: 16px; /* Ajustar tamaño de nombre */
+    }
+
+    .quoteRole {
+        font-size: 14px; /* Ajustar tamaño de rol */
+    }
+}
