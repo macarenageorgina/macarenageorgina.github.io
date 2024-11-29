@@ -55,3 +55,93 @@
 #myBtn:hover {
     background-color: #62039d; /* Add a dark-grey background on hover */
 }
+
+/* Estilo General Responsivo */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Servicios: Ajustes Responsivos para 436px */
+@media (max-width: 436px) {
+    .services_title {
+        font-size: 24px; /* Reducir tamaño del título */
+        padding: 0 16px; /* Agregar margen interno */
+    }
+
+    .servicescontent {
+        padding: 16px; /* Ajustar padding */
+    }
+
+    .services_row {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        padding: 0; /* Quitar padding horizontal */
+    }
+
+    .services_card {
+        width: 100%; /* Usar todo el ancho disponible */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+        padding: 24px; /* Reducir padding */
+        margin: 16px 0; /* Agregar espacio entre tarjetas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar sombra para mejor visibilidad */
+    }
+
+    .services_card h3 {
+        font-size: 18px; /* Reducir tamaño del título de las tarjetas */
+    }
+
+    .services_card p {
+        font-size: 14px; /* Reducir tamaño del texto */
+        line-height: 1.5; /* Mejorar legibilidad */
+    }
+
+    #myBtn {
+        bottom: 16px; /* Ajustar posición del botón "Volver a Inicio" */
+        right: 16px;
+        padding: 12px; /* Reducir padding */
+        font-size: 14px; /* Reducir tamaño del texto */
+    }
+}
+
+/* Navegación: Ajustes Responsivos para 436px */
+@media (max-width: 436px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar elementos */
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column; /* Apilar los enlaces verticalmente */
+        align-items: center;
+        padding: 0;
+        gap: 8px; /* Espacio entre enlaces */
+    }
+
+    .nav-item {
+        margin: 0; /* Quitar márgenes */
+    }
+
+    .btn-nav {
+        padding: 8px 12px; /* Reducir tamaño del botón */
+        font-size: 14px; /* Ajustar tamaño del texto */
+    }
+}
+
+/* Footer: Ajustes Responsivos para 436px */
+@media (max-width: 436px) {
+    footer {
+        padding: 16px; /* Reducir padding general */
+        text-align: center; /* Centrar contenido */
+    }
+
+    .footer-content div {
+        margin-bottom: 8px; /* Espacio entre bloques de texto */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Reducir tamaño del texto */
+    }
+}

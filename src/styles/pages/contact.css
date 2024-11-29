@@ -92,7 +92,85 @@ textarea {
     margin: 20px auto;
 }
 
+.submitButton:hover {
+    background-color: #f400a1;
+}
+
 .sociallinks_container {
     display: flex;
     justify-content: center;
+}
+
+/* Contacto: Estilos Responsivos */
+@media (max-width: 436px) {
+    .contact_section {
+        margin: 1.5rem; /* Reducir margen general */
+    }
+
+    .contact_container {
+        max-width: 100%; /* Usar todo el ancho disponible */
+        padding: 16px; /* Reducir padding */
+        box-shadow: none; /* Opcional: eliminar sombra para simplificar diseño */
+    }
+
+    .title_contact {
+        font-size: 24px; /* Reducir tamaño del título */
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        font-size: 14px; /* Reducir tamaño del subtítulo */
+        margin-bottom: 16px;
+    }
+
+    .inputGroup {
+        margin-bottom: 12px; /* Reducir margen inferior entre grupos */
+    }
+
+    input, textarea {
+        width: 100%; /* Ajustar al ancho del contenedor */
+        font-size: 14px; /* Reducir tamaño de fuente */
+        padding: 8px; /* Reducir padding */
+    }
+
+    textarea {
+        height: 80px; /* Ajustar altura */
+    }
+
+    .submitButton {
+        padding: 12px; /* Reducir padding */
+        font-size: 14px; /* Reducir tamaño de fuente */
+        max-width: 100%; /* Ajustar al ancho del contenedor */
+        height: auto; /* Permitir altura dinámica */
+    }
+
+    .sociallinks_container {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        gap: 10px; /* Espacio entre íconos */
+        margin-top: 16px; /* Espacio adicional */
+    }
+
+    .sociallinks_container a {
+        display: inline-block; /* Asegurar alineación correcta */
+        width: 32px; /* Tamaño ajustado del ícono */
+        height: 32px;
+    }
+
+    .sociallinks_container img {
+        width: 100%; /* Ajustar íconos al contenedor */
+        height: auto;
+    }
+
+    footer {
+        padding: 16px; /* Reducir padding general */
+        text-align: center; /* Centrar contenido */
+    }
+
+    .footer-content div {
+        margin-bottom: 8px; /* Espacio entre bloques de texto */
+    }
+
+    .footer-content p {
+        font-size: 12px; /* Reducir tamaño del texto */
+    }
 }
