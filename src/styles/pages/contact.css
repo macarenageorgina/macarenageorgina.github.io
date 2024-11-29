@@ -1,6 +1,7 @@
-.contact_section {
-    margin: 3.5rem; 
 
+
+.contact_section {
+    margin: 3.5rem;
 }
 
 .contact_container {
@@ -17,10 +18,10 @@
 }
 
 .title_contact {
-    color: #001858;; 
+    color: #001858;
     font-size: 34px;
     font-weight: 700;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .subtitle {
@@ -34,7 +35,7 @@
 }
 
 .blueText {
-    color: #001858;; /* Color azul para "Háblalo con nosotros" */
+    color: #001858; /* Color azul para "Háblalo con nosotros" */
 }
 
 .inputGroup {
@@ -59,19 +60,19 @@
 }
 
 input, textarea {
-    width: 606px;
+    width: 100%; /* Cambiar a un ancho relativo */
+    max-width: 606px; /* Mantener un ancho máximo en pantallas grandes */
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
     color: #000;
+    box-sizing: border-box; /* Incluir padding y bordes dentro del ancho */
 }
 
 textarea {
     height: 100px;
 }
-
-
 
 .submitButton {
     background: #F582AE;
@@ -101,76 +102,47 @@ textarea {
     justify-content: center;
 }
 
-/* Contacto: Estilos Responsivos */
-@media (max-width: 436px) {
-    .contact_section {
-        margin: 1.5rem; /* Reducir margen general */
+/* Responsividad para tablets */
+@media (max-width: 768px) {
+    .title_contact {
+        font-size: 28px;
     }
 
     .contact_container {
-        max-width: 100%; /* Usar todo el ancho disponible */
-        padding: 16px; /* Reducir padding */
-        box-shadow: none; /* Opcional: eliminar sombra para simplificar diseño */
-    }
-
-    .title_contact {
-        font-size: 24px; /* Reducir tamaño del título */
-        margin-bottom: 8px;
-    }
-
-    .subtitle {
-        font-size: 14px; /* Reducir tamaño del subtítulo */
-        margin-bottom: 16px;
-    }
-
-    .inputGroup {
-        margin-bottom: 12px; /* Reducir margen inferior entre grupos */
+        padding: 15px;
     }
 
     input, textarea {
-        width: 100%; /* Ajustar al ancho del contenedor */
-        font-size: 14px; /* Reducir tamaño de fuente */
-        padding: 8px; /* Reducir padding */
-    }
-
-    textarea {
-        height: 80px; /* Ajustar altura */
+        max-width: 100%; /* Eliminar límite fijo en pantallas más pequeñas */
     }
 
     .submitButton {
-        padding: 12px; /* Reducir padding */
-        font-size: 14px; /* Reducir tamaño de fuente */
-        max-width: 100%; /* Ajustar al ancho del contenedor */
-        height: auto; /* Permitir altura dinámica */
+        padding: 15px 40px; /* Reducir el tamaño del botón */
+    }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    .title_contact {
+        font-size: 24px;
+        margin-bottom: 15px;
     }
 
-    .sociallinks_container {
-        flex-direction: column; /* Cambiar a disposición vertical */
-        gap: 10px; /* Espacio entre íconos */
-        margin-top: 16px; /* Espacio adicional */
+    .subtitle {
+        font-size: 14px;
     }
 
-    .sociallinks_container a {
-        display: inline-block; /* Asegurar alineación correcta */
-        width: 32px; /* Tamaño ajustado del ícono */
-        height: 32px;
+    .contact_container {
+        padding: 10px;
     }
 
-    .sociallinks_container img {
-        width: 100%; /* Ajustar íconos al contenedor */
-        height: auto;
+    input, textarea {
+        width: 100%;
+        padding: 8px; /* Reducir padding interno */
     }
 
-    footer {
-        padding: 16px; /* Reducir padding general */
-        text-align: center; /* Centrar contenido */
-    }
-
-    .footer-content div {
-        margin-bottom: 8px; /* Espacio entre bloques de texto */
-    }
-
-    .footer-content p {
-        font-size: 12px; /* Reducir tamaño del texto */
+    .submitButton {
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }

@@ -1,30 +1,40 @@
+
+
+
+/* Cambios en el código */
+
 .testimonials_title { 
     font-size: 48px;    
     font-style: normal;
     font-weight: 700;
     line-height: 105%;
     text-align: center;
+    margin-bottom: 2rem; /* Espaciado debajo del título */
 }
 
 .testimonials-container {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en una nueva fila */
+    justify-content: center; /* Centrar las tarjetas en pantallas más pequeñas */
+    gap: 1.5rem; /* Espaciado uniforme entre las tarjetas */
+    padding: 1rem; /* Espaciado interno del contenedor */
 }
 
 .testimonial-quote {
-height: 200px;
-width: 400px;
-background: #f2f3ff;
-padding: 1.5rem;
-border-radius: 8px;
-margin-bottom: 2rem;
-background: linear-gradient(#f4f5ff, #d7daff);
+    height: auto; /* Permitir altura dinámica */
+    width: 400px; /* Ancho fijo para pantallas grandes */
+    max-width: 100%; /* Asegurar que se ajusten al ancho del contenedor */
+    background: #f2f3ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    background: linear-gradient(#f4f5ff, #d7daff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave */
 }
 
 .quote-text {
-display: block;
-color: #2f3465
+    display: block;
+    color: #2f3465;
 }
 
 .testimonial-attribution {
@@ -33,67 +43,46 @@ color: #2f3465
 }
 
 .img-testimonial {
-height: 48px;
-width: 48px;
-margin-right: 0.5rem;
+    height: 48px;
+    width: 48px;
+    margin-right: 0.5rem;
+    border-radius: 50%; /* Redondear las imágenes */
 }
 
 .nameBlock {
-display: inline-block;
+    display: inline-block;
 }
 
-.quoteRole {
-color: #2f3465;
+.quoteRole, .quoteName {
+    color: #2f3465;
 }
 
 .quoteName {
-color: #2f3465;
-font-weight: bold;
+    font-weight: bold;
 }
 
-/* Media query para dispositivos con un ancho máximo de 436px */
-@media (max-width: 436px) {
-    .testimonials_title {
-        font-size: 32px; /* Reducir tamaño de título */
-    }
-
+/* Responsividad para tablets */
+@media (max-width: 768px) {
     .testimonials-container {
-        flex-direction: column; /* Apilar elementos en lugar de alinearlos en fila */
-        gap: 16px; /* Agregar espacio entre los elementos */
-        align-items: center; /* Centrar los elementos */
+        flex-direction: column; /* Cambiar a diseño vertical */
+        align-items: center; /* Centrar las tarjetas */
     }
 
     .testimonial-quote {
-        width: 90%; /* Ajustar al 90% del ancho de la pantalla */
-        height: auto; /* Permitir altura dinámica */
-        padding: 1rem; /* Reducir el padding */
-    }
-
-    .quote-text {
-        font-size: 14px; /* Reducir tamaño del texto */
-        line-height: 1.5; /* Mejorar la legibilidad */
-    }
-
-    .testimonial-attribution {
-        flex-direction: column; /* Apilar la imagen y el nombre/rol */
-        align-items: center; /* Centrar los elementos */
-        gap: 0.5rem; /* Agregar espacio entre elementos */
-    }
-
-    .img-testimonial {
-        margin-right: 0; /* Quitar margen derecho */
-        margin-bottom: 0.5rem; /* Agregar margen inferior */
-    }
-
-    .nameBlock {
-        text-align: center; /* Centrar texto */
-    }
-
-    .quoteName {
-        font-size: 16px; /* Ajustar tamaño de nombre */
-    }
-
-    .quoteRole {
-        font-size: 14px; /* Ajustar tamaño de rol */
+        width: 90%; /* Ajustar el ancho al 90% del contenedor */
     }
 }
+
+/* Responsividad para móviles */
+@media (max-width: 480px) {
+    .testimonial-quote {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        padding: 1rem; /* Reducir el padding interno */
+    }
+
+    .testimonials_title {
+        font-size: 36px; /* Reducir el tamaño del título */
+        margin-bottom: 1.5rem; /* Ajustar el espaciado */
+    }
+}
+
