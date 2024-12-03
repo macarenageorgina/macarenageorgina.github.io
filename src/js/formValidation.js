@@ -56,7 +56,7 @@ function validateMessage() {
     }
 }
 
-// Evento de envío del formulario
+// Ennvío del formulario
 form.addEventListener('submit', (e) => {
     e.preventDefault(); // Evita el envío por defecto del formulario
 
